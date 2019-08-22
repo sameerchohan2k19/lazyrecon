@@ -7,8 +7,8 @@
 #
 # 
 ########################################
-auquatoneThreads=5
-subdomainThreads=10
+auquatoneThreads=20
+subdomainThreads=20
 dirsearchThreads=50
 dirsearchWordlist=~/tools/dirsearch/db/dicc.txt
 massdnsWordlist=~/tools/SecLists/Discovery/DNS/clean-jhaddix-dns.txt
@@ -455,8 +455,6 @@ foldername=${subreport[2]}
 subd=${subreport[3]}
 report $domain $subdomain $foldername $subd; exit 1;
 fi
-  clear
-  logo
   if [ -d "./$domain" ]
   then
     echo "This is a known target."
